@@ -26,12 +26,27 @@ NLxKBTG Cloud Function example
    cd nl-kbtg-hello-cloud-function
    ```
 
-1. Setup firebase project
+1. Setup `Firebase` project
    ```shell
    firebase login
    firebase init
    ```
-1. Develop
+1. Setup `BigQuery`
+   ```shell
+   # See : https://cloud.google.com/docs/authentication/getting-started
+   export GOOGLE_APPLICATION_CREDENTIALS=.credential.json
+   ```
+1. Open VSCode
    ```shell
    code .
+   ```
+1. Run
+   ```shell
+   cd functions
+   npm run serve
+   ```
+1. Develop
+   ```shell
+   cd functions
+   npm run dev
    ```
